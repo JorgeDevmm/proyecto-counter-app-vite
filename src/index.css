@@ -1,0 +1,96 @@
+:root {
+  --font-family: 'Lato', sans-serif;
+  --verder-claro: #28b463;
+  --verder-oscuro: #1c8f4c;
+  --rojo: #d3230f;
+  --rojo-oscuro: #7c1f15;
+  --amarillo: #F9D711;
+  --amarillo-oscuro: #b1980c;
+  --blanco: #ffffff;
+  --negro: #1D2025;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  background-color: var(--negro);
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-align: center;
+  color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: var(--rojo);
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contenedor-button{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid var(--blanco);
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 20%;
+  }
+}
+
+.button-contar{
+  background-color: var(--verder-claro);
+}
+
+.button:hover {
+  background-color: var(--verder-oscuro);
+}
+
+.button-restar{
+  background-color: var(--amarillo);
+}
+
+.button-restar:hover {
+  background-color: var(--amarillo-oscuro);
+}
+.button-reset{
+  background-color: var(--rojo);
+}
+
+.button-reset:hover {
+  background-color: var(--rojo-oscuro);
+}
